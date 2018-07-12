@@ -1,14 +1,15 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const controller = require('./controllers/controller');
 
 const app = express();
 
 app.use(bodyParser.json());
 
 // ===ENDPOINTS===
-//app.get();
-//app.post();
+app.get("/api/users", controller.readUser);
+app.post("/api/users", controller.createUser);
 //app.put();
 //app.delete();
 //===ENDPOINTS===

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 import routes from './routes';
 
@@ -8,8 +9,8 @@ class App extends Component {
     return (
       <div>
         <Link to="/">Home</Link>
-        <Link to="/starwars"></Link>
-
+        <Link to="/starwars">Starwars</Link>
+        
         {routes}
       </div>
     );
